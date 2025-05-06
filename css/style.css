@@ -9803,6 +9803,21 @@ h6,
   font-weight: bold;
 }
 
+/* cards */
 
+.destination-item1 {
+  height: 220px;
+}
+
+.destination-item2 {
+  height: 490px;
+}
+
+  @media (min-width: 768px) {
+    .dest {
+      height: 220px;
+      top:0;
+    }
+  }
 
 
