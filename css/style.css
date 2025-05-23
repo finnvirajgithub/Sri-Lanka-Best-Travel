@@ -9575,6 +9575,51 @@ h6,
   }
 }
 
+.page-header-services {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 7.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-destinations {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 4.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-tailormade {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 5.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 6.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-teatour {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/TeaTour/6.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-yoga {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/yoga1.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-packages {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 3.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-gallary {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 4.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-daytours {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 3.jpg), no-repeat center center;
+  background-size: cover;
+}
+
 .page-header-kandyday {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/kandy1.jpg), no-repeat center center;
   background-size: cover;
@@ -9587,6 +9632,21 @@ h6,
 
 .page-header-colomboday {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/colombo1dark.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-roundtours {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 5.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-4day {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 6.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-5day {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/tangalle.avif), no-repeat center center;
   background-size: cover;
 }
 
@@ -9605,8 +9665,138 @@ h6,
   background-size: cover;
 }
 
+.page-header-15day {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 5.jpg), no-repeat center center;
+  background-size: cover;
+}
+
 .page-header-cultural {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 3.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-adamspeak {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/adamspeak3.avif), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-anuradhapura {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/Anuradhapura3.avif), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-dambulla {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/dambulla3.avif), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-kandy {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/kandy3.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-polonnaruwa {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/polonnaruwa2.webp), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-sigiriya {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/sigiriya\ \(1\).jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-hillcouncry {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/Hero\ 5.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-ella {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/ella3.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-haputale {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/haputale3.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-nuwara-eliya {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/nuwaraeliya4.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-beach {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/beach.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-arugambay {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/arugambay3.avif), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-bentota {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/bentota1.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-galle {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/galle2.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-mirissa {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/mirissa4.jpeg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-tangalle {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/tangalle1.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-trincomalee {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/trinco.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-wild {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/wild.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-habarana {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/habarana.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-udawalawe {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/udawalawe3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-wilpattu {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/wilpattu2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-yala {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/yala4.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-urban {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/urban.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-colombo {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/colombo.avif) no-repeat center center;
+  background-size: cover;
+}
+
+.page-header-negombo {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/Negambo.webp) no-repeat center center;
   background-size: cover;
 }
 
