@@ -10186,3 +10186,13 @@ h6,
     padding-top: 30px;
   }
 }
+
+.navbar-logo {
+  width: 100px;
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    width: 50px;
+  }
+}
