@@ -10108,16 +10108,16 @@ h6,
 	padding-top: 0;
 	padding-bottom: 88px;
 }
-.blog-item {
+.blog-item1 {
 	height: 450px;
 	position: relative;
 	margin-bottom: 30px;
 	border-radius: 5px;
 }
-.blog-item.small-size {
+.blog-item1.small-size {
 	height: 400px;
 }
-.blog-item .bi-text {
+.blog-item1 .bi-text {
 	position: absolute;
 	left: 0;
 	bottom: 25px;
@@ -10125,7 +10125,7 @@ h6,
 	padding-left: 30px;
 	padding-right: 30px;
 }
-.blog-item .bi-text .b-tag {
+.blog-item1 .bi-text .b-tag {
 	display: inline-block;
 	color: #ffffff;
 	font-size: 12px;
@@ -10135,14 +10135,14 @@ h6,
 	padding: 3px 10px;
 	border-radius: 2px;
 }
-.blog-item .bi-text h4 {
+.blog-item1 .bi-text h4 {
 	margin-top: 18px;
 	margin-bottom: 18px;
 }
-.blog-item .bi-text h4 a {
+.blog-item1 .bi-text h4 a {
 	color: #ffffff;
 }
-.blog-item .bi-text .b-time {
+.blog-item1 .bi-text .b-time {
 	font-size: 12px;
 	color: #ffffff;
 	text-transform: uppercase;
