@@ -25,6 +25,19 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+              publicKey: "GyP8foRJ9EtjU-s5T",
+          });
+      })();
+      </script>
 </head>
 
 <body>
@@ -139,8 +152,7 @@
                 <div class="col-lg-4">
                     <div class="contact-text">
                         <h2>Contact Us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                        <p>We’re here to help! Reach out for bookings, custom tours, or travel advice—our friendly team is just a message away.</p>
                         <table>
                             <tbody>
                                 <tr>
@@ -160,17 +172,17 @@
                     </div>
                 </div>
                 <div class="col-lg-7 offset-lg-1">
-                    <form action="#" class="contact-form">
+                    <form action="#" class="contact-form" id="contactForm">
                         <div class="row">
                             <div class="col-lg-6">
-                                <input type="text" placeholder="Your Name">
+                                <input type="text" placeholder="Your Name" id="contactname">
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" placeholder="Your Email">
+                                <input type="text" placeholder="Your Email" id="contactemail">
                             </div>
                             <div class="col-lg-12">
-                                <textarea placeholder="Your Message"></textarea>
-                                <button type="submit">Submit Now</button>
+                                <textarea placeholder="Your Message" id="contactmessage"></textarea>
+                                <button type="submit">Leave Us a Message</button>
                             </div>
                         </div>
                     </form>
@@ -281,6 +293,26 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevents the page from refreshing
+
+            let params = {
+                name: document.getElementById("contactname").value,
+                email: document.getElementById("contactemail").value,
+                message: document.getElementById("contactmessage").value
+            };
+
+            // Uncomment this line to send the email with EmailJS
+            emailjs.send("service_1iuma5k", "template_zhd5rob", params).then(() => {
+                alert("Your message is sent successfully!");
+            });
+
+            // Optionally reset the form after submission
+            document.getElementById('contactForm').reset();
+        });
+
+    </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>

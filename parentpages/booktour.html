@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>TRAVELER - Free Travel Website Template</title>
+    <link rel="shortcut icon" href="./img/sl/logo-removebg-preview.png" type="image/x-icon">
+    <title>Sri Lanka Best Travel</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -24,14 +25,18 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css copy/style.css" rel="stylesheet">
 
-    <!-- Stylesheets -->
-	
-	
-	<link rel="stylesheet" href="../css copy/slicknav.min.css"/>
-	<link rel="stylesheet" href="../css copy/fresco.css"/>
-	<link rel="stylesheet" href="../css copy/slick.css"/>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+              publicKey: "GyP8foRJ9EtjU-s5T",
+          });
+      })();
+      </script>
 </head>
 
 <body>
@@ -106,15 +111,15 @@
                                 <a href="../Destinations/Urban&Transit/Urban&Transit.html" class="dropdown-item">Urban & Transit Cities</a>
                             </div>
                         </div>
-                        <a href="./parentpages/tailormade.html" class="nav-item nav-link">Tailor-Made Tours</a>
+                        <a href="./tailormade.html" class="nav-item nav-link">Tailor-Made Tours</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tour Packages</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Tour Packages</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
                                 <a href="../DayTours/DayTours.html" class="dropdown-item">Day Tours</a>
                                 <a href="../RoundTours/RoundTours.html" class="dropdown-item">Round Tours</a>
                             </div>
                         </div>
-                        <a href="./parentpages/gallary.html" class="nav-item nav-link active">Gallery</a>
+                        <a href="./gallary.html" class="nav-item nav-link">Gallery</a>
                         <a href="./contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -123,209 +128,64 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid page-header page-header-gallary">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-4 text-white text-uppercase">Gallary</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="../index.html">Home</a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Gallary</p>
+    
+
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration1">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h1 class="text-white"><span class="text-primary">Plan. Book. </span>Plan. Book.</h1>
+                    </div>
+                    <p class="text-white">Secure your unforgettable Sri Lankan journey in just a few clicks. Our simple booking process ensures convenience, flexibility, and expert support every step of the way—tailored just for you.</p>
+                    <ul class="list-inline text-white m-0">
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Easy and fast online booking system</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Personalized travel itineraries available</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>24/7 customer support and guidance</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-primary text-center p-4">
+                            <h1 class="text-white m-0">Book the Tour</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                            <form action="#" class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control p-4" placeholder="tour" name="tour"  required="required" id="tourTitle"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name" id="contactname">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Your email" required="required" name="name" id="contactemail"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Phone" id="contactphone">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control p-4" name="passengers" min="1" required placeholder="Passengers" id="passengers">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="" id="contactmessage" cols="30" rows="7" class="form-control" placeholder="Message" name="messeage"></textarea>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-block py-3" type="submit">Book</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
+    <!-- Registration End -->
 
 
     
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid pt-5">
-        <div class="container pt-5">
-            <div class="text-center">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Gallary</h6>
-                <h1>Memories</h1>
-                
-            </div>
-            
-        </div>
-    </div>
-    <!-- Testimonial End -->
-     <!-- Hero Section -->
-	<section class="hero__section">
-		<div class="hero-slider">
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/1.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/1.jpeg" alt="">
-				</a>
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/2.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/2.jpeg" alt="">
-					</a>
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/3.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/3.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/4.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/4.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/5.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/5.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/6.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/6.jpeg" alt="">
-				</a>	
-			</div>
-            <div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/7.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/7.jpeg" alt="">
-				</a>
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/8.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/8.jpeg" alt="">
-					</a>
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/9.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/9.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/10.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/10.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/11.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/11.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/12.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/12.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/13.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/13.jpeg" alt="">
-				</a>	
-			</div>
-            <div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/14.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/14.jpeg" alt="">
-				</a>
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/15.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/15.jpeg" alt="">
-					</a>
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/16.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/16.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/17.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/17.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/18.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/18.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/19.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/19.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/20.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/20.jpeg" alt="">
-				</a>	
-			</div>
-            <div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/21.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/21.jpeg" alt="">
-				</a>
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/22.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/22.jpeg" alt="">
-					</a>
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/23.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/23.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/24.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/24.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/25.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/25.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/26.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/26.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/27.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/27.jpeg" alt="">
-				</a>	
-			</div>
-            <div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/28.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/28.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/29.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/29.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/30.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/30.jpeg" alt="">
-				</a>	
-			</div>
-			<div class="slide-item">
-				<a class="fresco" href="../img/to tripadvisor/31.jpeg" data-fresco-group="projects">
-					<img src="../img/to tripadvisor/31.jpeg" alt="">
-				</a>	
-			</div>
-		</div>
-		<div class="hero-text-slider">
-			
-			<div class="text-item">
-				<h2>Remarkable</h2>
-				<p>Photography</p>
-			</div>
-		</div>
-	</section>
-	<!-- Hero Section end -->
-
-
-
     <!-- Footer Start -->
-    <div class="container-fluid  text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/sl/yala2.jpg), no-repeat center center;
+    <div class="container-fluid  text-white-50 py-5 px-sm-3 px-lg-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/sl/yala2.jpg), no-repeat center center;
   background-size: cover;">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
@@ -417,6 +277,35 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
+    <script>
+    // Autofill form data
+    window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById('tourTitle').value = urlParams.get('tour');
+        };
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevents the page from refreshing
+
+            let params = {
+                title: document.getElementById("tourTitle").value,
+                name: document.getElementById("contactname").value,
+                email: document.getElementById("contactemail").value,
+                phone: document.getElementById("contactphone").value,
+                passengers: document.getElementById("passengers").value,
+                message: document.getElementById("contactmessage").value
+            };
+
+            // Uncomment this line to send the email with EmailJS
+            emailjs.send("service_1iuma5k", "template_mjlfoqn", params).then(() => {
+                alert("Your message is sent successfully!");
+            });
+
+            // Optionally reset the form after submission
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
@@ -432,14 +321,6 @@
 
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
-    <script src="../js copy/main.js"></script>
-
-    <!--====== Javascripts & Jquery ======-->
-	<script src="../js copy/vendor/jquery-3.2.1.min.js"></script>
-	<script src="../js copy/jquery.slicknav.min.js"></script>
-	<script src="../js copy/slick.min.js"></script>
-	<script src="../js copy/fresco.min.js"></script>
-	<script src="../js copy/main.js"></script>
 </body>
 
 </html>

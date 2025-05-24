@@ -142,61 +142,10 @@
     <!-- Header End -->
 
 
-    <!-- Booking Start -->
-    <div class="container-fluid booking mt-5 pb-5">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Destination</option>
-                                        <option value="1">Destination 1</option>
-                                        <option value="2">Destination 1</option>
-                                        <option value="3">Destination 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Duration</option>
-                                        <option value="1">Duration 1</option>
-                                        <option value="2">Duration 1</option>
-                                        <option value="3">Duration 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Booking End -->
-
+    
     <!-- About Start -->
-    <div class="container-fluid py-1">
-        <div class="container pt-1">
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
             <div class="row">
                 <div class="col-lg-6" style="min-height: 300px;">
                     <div class="position-relative h-75">
@@ -415,8 +364,8 @@
                 <!-- end of item -->
             </div> <!-- end of accordion-container -->
             <!-- end of accordion -->
-            <div style="display: flex; align-items: center; justify-content: center;">
-                <a href="./parentpages/package.html" class="btn btn-primary py-md-3 px-md-5 mt-2" >Book the Tour</a>
+            <div style="display: flex; align-items: center; justify-content: center;" onclick="openBookingForm('15 - Day Sri Lanka Grand Odyssey')">
+                <a href="#" class="btn btn-primary py-md-3 px-md-5 mt-2" >Book the Tour</a>
             </div>
 		</div> <!-- end of area-2 -->
     </div>
@@ -578,6 +527,11 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+    <script>
+        function openBookingForm(tourTitle) {
+            window.location.href = `/parentpages/booktour.html?tour=${tourTitle}`;
+        }
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

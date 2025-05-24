@@ -9875,6 +9875,11 @@ h6,
   background-size: cover;
 }
 
+.bg-registration1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/sl/hero/hero\ 7.jpg), no-repeat center center;
+  background-size: cover;
+}
+
 .team-item {
   transition: .5s;
 }

@@ -29,6 +29,19 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+              publicKey: "GyP8foRJ9EtjU-s5T",
+          });
+      })();
+      </script>
 </head>
 
 <body>
@@ -137,61 +150,10 @@
     <!-- Header End -->
 
 
-    <!-- Booking Start -->
-    <div class="container-fluid booking mt-5 pb-5">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Destination</option>
-                                        <option value="1">Destination 1</option>
-                                        <option value="2">Destination 1</option>
-                                        <option value="3">Destination 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Duration</option>
-                                        <option value="1">Duration 1</option>
-                                        <option value="2">Duration 1</option>
-                                        <option value="3">Duration 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Booking End -->
-
+    
     <!-- About Us Page Section Begin -->
-    <section class="aboutus-page-section spad">
-        <div class="container">
+    <section class="aboutus-page-section spad pt-5">
+        <div class="container pt-5">
             <div class="about-page-text">
                 <div class="row">
                     <div class="col-lg-6">
@@ -233,9 +195,9 @@
                         <!-- new form -->
                         <form id="tailor-made-form" name="sentMessage" novalidate="novalidate">
                             <div class="form-row">
-                                <div class="form-group">
+                                <div class="form-group" >
                                     <label for="title">Title*</label>
-                                    <select id="title" name="title" class="form-control p-4" required>
+                                    <select id="title" name="title" class="form-control" required>
                                         <option value="">Select title</option>
                                         <option value="Mr">Mr</option>
                                         <option value="Mrs">Mrs</option>
@@ -292,7 +254,7 @@
                 
                             <div class="form-group">
                                 <label for="accommodationType">Accommodation type*</label>
-                                <select id="accommodationType" class="form-control p-4" name="accommodationType" required>
+                                <select id="accommodationType" class="form-control" name="accommodationType" required>
                                     <option value="">Select accommodation type</option>
                                     <option value="5-star">5 Star hotels</option>
                                     <option value="4-star">4 Star hotels</option>
@@ -304,7 +266,7 @@
                 
                             <div class="form-group">
                                 <label for="hearAboutUs">How did you hear about us*</label>
-                                <select id="hearAboutUs" class="form-control p-4" name="hearAboutUs" required>
+                                <select id="hearAboutUs" class="form-control" name="hearAboutUs" required>
                                     <option value="">Select option</option>
                                     <option value="trip-advisor">Trip Advisor</option>
                                     <option value="website">Website</option>
@@ -433,6 +395,35 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+    <script>
+        document.getElementById('tailor-made-form').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevents the page from refreshing
+
+            let params = {
+                tailor_made_title: document.getElementById("title").value,
+                tailor_made_name: document.getElementById("fullName").value,
+                tailor_made_country: document.getElementById("country").value,
+                tailor_made_contact_number: document.getElementById("contactNo").value,
+                tailor_made_email: document.getElementById("email").value,
+                tailor_made_arrival_date: document.getElementById("arrivalDate").value,
+                tailor_made_departure_date: document.getElementById("departureDate").value,
+                tailor_made_adults: document.getElementById("adults").value,
+                tailor_made_kids: document.getElementById("kids").value,
+                tailor_made_accomadation: document.getElementById("accommodationType").value,
+                tailor_made_how_did_you_hear_about_us: document.getElementById("hearAboutUs").value,
+                tailor_made_special_note: document.getElementById("specialNote").value
+            };
+
+            // Uncomment this line to send the email with EmailJS
+            emailjs.send("service_1iuma5k", "template_zhd5rob", params).then(() => {
+                alert("Your message is sent successfully!");
+            });
+
+            // Optionally reset the form after submission
+            document.getElementById('tailor-made-form').reset();
+        });
+
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

@@ -25,6 +25,18 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+              publicKey: "GyP8foRJ9EtjU-s5T",
+          });
+      })();
+      </script>
 </head>
 
 <body>
@@ -107,6 +119,7 @@
                                 <a href="../RoundTours/RoundTours.html" class="dropdown-item">Round Tours</a>
                             </div>
                         </div>
+                        <a href="./gallary.html" class="nav-item nav-link">Gallery</a>
                         <a href="./contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -132,61 +145,10 @@
     <!-- Header End -->
 
 
-    <!-- Booking Start -->
-    <div class="container-fluid booking mt-5 pb-5">
-        <div class="container pb-5">
-            <div class="bg-light shadow" style="padding: 30px;">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Destination</option>
-                                        <option value="1">Destination 1</option>
-                                        <option value="2">Destination 1</option>
-                                        <option value="3">Destination 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Depart Date" data-target="#date1" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <div class="date" id="date2" data-target-input="nearest">
-                                        <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Return Date" data-target="#date2" data-toggle="datetimepicker"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Duration</option>
-                                        <option value="1">Duration 1</option>
-                                        <option value="2">Duration 1</option>
-                                        <option value="3">Duration 1</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 47px; margin-top: -2px;">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Booking End -->
 
 
     <!-- Registration Start -->
-    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+    <div class="container-fluid bg-registration" >
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-7 mb-5 mb-lg-0">
@@ -208,20 +170,15 @@ Enjoy a 30% discount on the program when you book a tour with us!</p>
                             <h1 class="text-white m-0">Book a Session</h1>
                         </div>
                         <div class="card-body rounded-bottom bg-white p-5">
-                            <form>
+                            <form action="#" id="yogaForm">
                                 <div class="form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Your name" required="required" />
+                                    <input type="text" class="form-control p-4" placeholder="Your name" required="required" id="yoganame"/>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Your email" required="required" />
+                                    <input type="email" class="form-control p-4" placeholder="Your email" required="required" id="yogaemail"/>
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Select a destination</option>
-                                        <option value="1">destination 1</option>
-                                        <option value="2">destination 1</option>
-                                        <option value="3">destination 1</option>
-                                    </select>
+                                    <input type="number" class="form-control p-4" name="yogapeoples" min="1" required placeholder="Number of Peoples" id="yogapeoples">
                                 </div>
                                 <div>
                                     <button class="btn btn-primary btn-block py-3" type="submit">Book</button>
@@ -236,7 +193,7 @@ Enjoy a 30% discount on the program when you book a tour with us!</p>
     <!-- Registration End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid  text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px; background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/sl/yala2.jpg), no-repeat center center;
+    <div class="container-fluid  text-white-50 py-5 px-sm-3 px-lg-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/sl/yala2.jpg), no-repeat center center;
   background-size: cover;">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
@@ -327,6 +284,26 @@ Enjoy a 30% discount on the program when you book a tour with us!</p>
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+    <script>
+        document.getElementById('yogaForm').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevents the page from refreshing
+
+            let params = {
+                yoganame: document.getElementById("yoganame").value,
+                yogaemail: document.getElementById("yogaemail").value,
+                yogapeoples: document.getElementById("yogapeoples").value
+            };
+
+            // Uncomment this line to send the email with EmailJS
+            emailjs.send("service_1iuma5k", "template_mjlfoqn", params).then(() => {
+                alert("Your message is sent successfully!");
+            });
+
+            // Optionally reset the form after submission
+            document.getElementById('yogaForm').reset();
+        });
+
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
