@@ -530,6 +530,9 @@ Enjoy a 30% discount on the program when you book a tour with us!</p>
                                     <input type="email" class="form-control p-4" placeholder="Your email" required="required" id="yogaemail"/>
                                 </div>
                                 <div class="form-group">
+                                    <input type="date" id="Date" class="form-control p-4" name="Date" required>
+                                </div>
+                                <div class="form-group">
                                     <input type="number" class="form-control p-4" name="yogapeoples" min="1" required placeholder="Number of Peoples" id="yogapeoples">
                                 </div>
                                 <div>
@@ -660,6 +663,7 @@ Enjoy a 30% discount on the program when you book a tour with us!</p>
             let params = {
                 yoganame: document.getElementById("yoganame").value,
                 yogaemail: document.getElementById("yogaemail").value,
+                yogadate: document.getElementById("Date").value,
                 yogapeoples: document.getElementById("yogapeoples").value
             };
 
